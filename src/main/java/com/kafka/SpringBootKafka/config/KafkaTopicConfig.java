@@ -12,4 +12,9 @@ public class KafkaTopicConfig {
     public NewTopic galaxyTopic(){
         return TopicBuilder.name("galaxy").build();
     }
+
+    @Bean
+    public NewTopic galaxyJsonTopic(){
+        return TopicBuilder.name("galaxy_json").build();
+    }
 }
